@@ -1,12 +1,6 @@
 #!/usr/bin/python3
-def print_reversed_list_integer(li):
-    newl=[]
-    rova=len(li)-1
-    i = len(li)-1
-    s=0
-    while s <= i:
-        newl.append(li[rova])
-        rova= rova -1
-        s= s +1
-    for j in range(len(newl)):
-        print("{:d}".format(newl[j]))
+def print_reversed_list_integer(my_list=[]):
+    if my_list:
+        my_list.reverse()
+        for i in range(len(my_list)):
+            print("{:d}".format(my_list[i]))
