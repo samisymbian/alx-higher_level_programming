@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def new_in_list(li,a,n):
-    newl= li.copy()
-    if a <0 or a > len(li)-1:
-        return newl
+def new_in_list(my_list, idx, element):
+    copy = my_list.copy()
+    if idx < 0 or idx > len(my_list) - 1:
+        return my_list.copy()
     else:
-        newl[a]=n
-        return newl
+        copy[idx] = element
+        return copy
